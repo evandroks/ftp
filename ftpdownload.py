@@ -3,14 +3,14 @@
 import ftplib
 import sys
 
-print "Username:- thunderpy --- Password:- mitr@2017"
+print "Username:- <USERNAME> --- Password:- <PASSWORD>"
 
 data = []
 
 USERNAME = raw_input("Enter username: ")
 PASSWORD = raw_input("Enter password: ")
 
-ftp = ftplib.FTP("182.73.79.108")
+ftp = ftplib.FTP("<SERVER_NAME>")
 ftp.login(USERNAME, PASSWORD)
 
 ftp.dir(data.append)
